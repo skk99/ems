@@ -2,13 +2,13 @@ import React from "react";
 import ListEmployee from "./ListEmployee";
 import Header from "./Header";
 import Footer from "./Footer";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
 import Employee from "./Employee";
 
 function App() {
   return (
     <div className="App">
-        <BrowserRouter>
+        <HashRouter>
             <Header />
             <Routes>
                 {/* // http://localhost:3000 */}
@@ -21,7 +21,7 @@ function App() {
                 <Route path="/edit-employee/:id" element={ <Employee /> }></Route>
             </Routes>
             <Footer />
-        </BrowserRouter>
+        </HashRouter>
     </div>
   );
 }
