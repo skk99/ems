@@ -63,7 +63,7 @@ function ListEmployee() {
     return (
         <div className="container">
             <h2 className="text-center">List of Employees</h2>
-            <button className="btn btn-primary mb-2" onClick={addNewEmployee}>Add Employee</button>
+            <button className="btn btn-primary mb-2 btn-sm" onClick={addNewEmployee}>Add Employee</button>
             <table className="table table-striped table-bordered">
                 <thead className="table-dark">
                     <tr>
@@ -83,8 +83,8 @@ function ListEmployee() {
                                 <td>{employee.lastName}</td>
                                 <td>{employee.email}</td>
                                 <td>
-                                    <button className="btn btn-info" onClick={ () => updateEmployee(employee.id) }>Update</button>
-                                    <button className="btn btn-danger" style={{marginLeft: '10px'}} onClick={ () => removeEmployee(employee.id) }>Delete</button>
+                                    <button className="btn btn-info btn-sm" onClick={ () => updateEmployee(employee.id) }>Update</button>
+                                    <button className="btn btn-danger btn-sm" style={{marginLeft: '10px'}} onClick={ () => removeEmployee(employee.id) }>Delete</button>
                                 </td>
                             </tr>
                         )
@@ -98,8 +98,8 @@ function ListEmployee() {
 								<td>{sample_employee.lastName}</td>
 								<td>{sample_employee.email}</td>
 								<td>
-									<button className="btn btn-info" onClick={ () => updateEmployee(sample_employee.id) }>Update</button>
-									<button className="btn btn-danger" style={{marginLeft: '10px'}} onClick={ () => removeEmployee(sample_employee.id) }>Delete</button>
+									<button className="btn btn-info btn-sm" onClick={ () => updateEmployee(sample_employee.id) }>Update</button>
+									<button className="btn btn-danger btn-sm" style={{marginLeft: '10px'}} onClick={ () => removeEmployee(sample_employee.id) }>Delete</button>
 								</td>
 							</tr>
 						)
